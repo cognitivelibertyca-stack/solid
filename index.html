@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyMmQzZWUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZTc0OTAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cGF0aCBkPSJNNjUgMjBIMzVjLTE1IDAtMTUgMTUgMCAxNWgyMGMxNSAwIDE1IDE1IDAgMTVINDVjLTE1IDAtMTUgMTUgMCAxNWgzMCIgc3Ryb2tlPSJ1cmwoI2EpIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJtMjUgODAgMTAtMTUgMTAgMTUgMTAtMTUgMTAgMTUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwuNCkiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaWW9InJvdW5kIiBmaWxsPSJub25lIi8+PC9zdmc+" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solid Web Creations | Web Design & SEO in Hanover, Ontario</title>
+    <meta name="description" content="Expert web design & local SEO in Hanover, Ontario. Solid Web Creations builds high-performance websites that deliver measurable growth for local businesses. Contact Matthew Danielson." />
+    <meta name="keywords" content="web design Hanover Ontario, SEO Hanover Ontario, local SEO services Hanover, web development Hanover, small business websites, responsive web design, Matthew Danielson, Solid Web Creations" />
+    <meta name="author" content="Solid Web Creations" />
+    <meta name="robots" content="index, follow" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .fade-in-load {
+        animation: fadeIn 0.8s ease-in-out forwards;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .anim-item {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .anim-item.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      @keyframes icon-fade-scale-up {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .animate-icon-fade-scale {
+        animation: icon-fade-scale-up 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      }
+
+      @keyframes pulse {
+        50% {
+          opacity: .5;
+        }
+      }
+      .animate-pulse {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+
+      @keyframes shimmer {
+        0%{
+            background-position: -1000px 0;
+        }
+        100%{
+            background-position: 1000px 0;
+        }
+      }
+      .shimmer-bg {
+          background: #334155;
+          background-image: linear-gradient(to right, #334155 0%, #475569 20%, #334155 40%, #334155 100%);
+          background-repeat: no-repeat;
+          background-size: 2000px 100%;
+          animation: shimmer 3s linear infinite;
+      }
+      
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .anim-item, .fade-in-load, .animate-icon-fade-scale, .animate-pulse, .shimmer-bg {
+          transition: none;
+          animation: none;
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
