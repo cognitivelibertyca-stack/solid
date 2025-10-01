@@ -1,6 +1,6 @@
 yamlVersion: 1
 services:
-  - type: static
+  - type: static_site
     name: solid-web-creations
     branch: main
     buildCommand: npm run build
