@@ -1,6 +1,6 @@
 yamlVersion: 1
 services:
-  - type: static_site
+  - type: static
     name: solid-web-creations
     branch: main
     buildCommand: yarn; yarn build
