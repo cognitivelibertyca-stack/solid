@@ -1,4 +1,4 @@
-yaml-version: 1 
+yaml-version: 1
 services:
   - type: static
     name: solid-web-creations
@@ -6,6 +6,6 @@ services:
     buildCommand: npm run build
     staticPublishPath: build
     routes:
-      - type: rewrite
-        source: /*
+      - type: rewrite # 
+        source: /* 
         destination: /index.html
