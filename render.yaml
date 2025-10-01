@@ -1,17 +1,11 @@
 yaml-version: 1 
 
 services:
-  # A static site service
   - type: static
     name: solid-web-creations
-    # The branch to deploy from. Defaults to 'main'
     branch: main
-    # The command to build the static assets
     buildCommand: npm run build
-    # The directory containing the built static files
     staticPublishPath: build
-    # Rewrite rule for Single-Page Applications (SPA)
-    # This ensures that all routes are handled by index.html for client-side routing.
     routes:
       - type: rewrite
         source: /*
