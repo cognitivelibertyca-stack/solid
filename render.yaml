@@ -1,5 +1,4 @@
 yaml-version: 1 
-
 services:
   - type: static
     name: solid-web-creations
