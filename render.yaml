@@ -1,7 +1,7 @@
 # Service configuration for Render.com
 services:
   # A static site service
-  - type: static site
+  - type: web
     name: solid-web-creations
     # The branch to deploy from. Defaults to 'main'
     branch: main
