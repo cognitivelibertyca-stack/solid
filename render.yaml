@@ -1,11 +1,15 @@
 yaml-version: 1
 services:
-  - type: static
-    name: solid-web-creations
-    branch: main
-    buildCommand: npm run build
-    staticPublishPath: build
-    routes:
-      - type: rewrite # 
-        source: /* 
-        destination: /index.html
+
+The service definition must start with a hyphen (-)
+type: static
+name: solid-web-creations
+branch: main
+buildCommand: npm run build
+staticPublishPath: build
+routes:
+
+The route rule must also start with a hyphen (-)
+type: rewrite
+source: /* 
+destination: /index.html
