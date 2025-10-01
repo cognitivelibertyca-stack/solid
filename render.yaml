@@ -3,7 +3,7 @@ services:
   - type: static_site
     name: solid-web-creations
     branch: main
-    buildCommand: npm run build
+    buildCommand: yarn; yarn build
     staticPublishPath: build
     routes:
       - type: rewrite
